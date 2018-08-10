@@ -360,10 +360,10 @@ describe('func().class()', () => {
         });
 
         const testFunc = function () {};
-        const testClass = class MyClass {};
+        // const testClass = class MyClass {};
 
         Helper.validate(classSchema, [
-            [{ _class: testClass }, true],
+            // [{ _class: testClass }, false],
             [{ _class: testFunc }, false, null, {
                 message: 'child "_class" fails because ["_class" must be a class]',
                 details: [{

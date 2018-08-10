@@ -3,7 +3,7 @@
 // Load modules
 
 const Hoek = require('@tleef/hoek');
-const Topo = require('topo');
+const Topo = require('@tleef/topo');
 const Any = require('../any');
 const Errors = require('../../errors');
 const Cast = require('../../cast');
