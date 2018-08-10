@@ -2,7 +2,7 @@
 
 // Load modules
 
-const Hoek = require('hoek');
+const Hoek = require('@tleef/hoek');
 const Any = require('../any');
 const Cast = require('../../cast');
 const Ref = require('../../ref');

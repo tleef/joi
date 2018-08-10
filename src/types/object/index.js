@@ -2,7 +2,7 @@
 
 // Load modules
 
-const Hoek = require('hoek');
+const Hoek = require('@tleef/hoek');
 const Topo = require('topo');
 const Any = require('../any');
 const Errors = require('../../errors');

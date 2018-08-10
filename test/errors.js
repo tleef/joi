@@ -1,8 +1,8 @@
 'use strict';
 
 // Load modules
+const { expect } = require('@tleef/code');
 
-const Lab = require('lab');
 const Joi = require('../src');
 
 
@@ -12,8 +12,6 @@ const internals = {};
 
 
 // Test shortcuts
-
-const { describe, it, expect } = exports.lab = Lab.script();
 
 
 describe('errors', () => {

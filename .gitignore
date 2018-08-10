@@ -18,6 +18,7 @@ sandbox.js
 package-lock.json
 
 # Coverage directory used by tools like istanbul
+.nyc_output/
 coverage
 
 lib/

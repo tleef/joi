@@ -4,7 +4,7 @@
 
 const Any = require('../any');
 const Ref = require('../../ref');
-const Hoek = require('hoek');
+const Hoek = require('@tleef/hoek');
 
 
 // Declare internals

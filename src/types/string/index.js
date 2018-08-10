@@ -3,7 +3,7 @@
 // Load modules
 
 const Net = require('net');
-const Hoek = require('hoek');
+const Hoek = require('@tleef/hoek');
 let Isemail;                            // Loaded on demand
 const Any = require('../any');
 const Ref = require('../../ref');

@@ -3,7 +3,7 @@
 // Load modules
 
 const Any = require('../any');
-const Hoek = require('hoek');
+const Hoek = require('@tleef/hoek');
 
 
 // Declare internals

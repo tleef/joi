@@ -1,9 +1,9 @@
 {
-  "name": "joi",
+  "name": "@tleef/joi",
   "description": "Object schema validation",
   "version": "13.5.2",
-  "homepage": "https://github.com/hapijs/joi",
-  "repository": "git://github.com/hapijs/joi",
+  "homepage": "https://github.com/tleef/joi",
+  "repository": "git://github.com/tleef/joi",
   "main": "lib/index.js",
   "keywords": [
     "hapi",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.56",
-    "hoek": "5.x.x",
+    "@tleef/hoek": "^5.0.3-r.1",
     "isemail": "3.x.x",
     "topo": "3.x.x"
   },
@@ -24,16 +24,17 @@
     "@babel/core": "^7.0.0-beta.56",
     "@babel/plugin-transform-runtime": "^7.0.0-beta.56",
     "@babel/preset-env": "^7.0.0-beta.56",
-    "code": "5.x.x",
+    "@babel/register": "^7.0.0-beta.56",
+    "@tleef/code": "^5.2.0-r.1",
     "hapitoc": "1.x.x",
-    "lab": "15.x.x"
+    "coveralls": "^3.0.2",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
-    "test": "lab -t 100 -a code -L",
-    "test-debug": "lab -a code",
-    "test-cov-html": "lab -r html -o coverage.html -a code",
-    "test-cov-lcov": "lab -r console -o stdout -r lcov -o coverage/lcov.info -a code",
+    "test": "mocha --require @babel/register",
+    "test:coverage": "nyc --reporter lcovonly --reporter text yarn test",
     "toc": "hapitoc",
     "version": "npm run toc && git add API.md README.md",
     "prepare": "yarn build"

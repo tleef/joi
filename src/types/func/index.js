@@ -2,7 +2,7 @@
 
 // Load modules
 
-const Hoek = require('hoek');
+const Hoek = require('@tleef/hoek');
 const ObjectType = require('../object');
 const Ref = require('../../ref');
 

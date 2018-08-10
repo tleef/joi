@@ -2,7 +2,7 @@
 
 // Load modules
 
-const { expect } = require('code');
+const { expect } = require('@tleef/code');
 const Joi = require('../src');
 
 

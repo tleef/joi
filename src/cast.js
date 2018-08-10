@@ -2,7 +2,7 @@
 
 // Load modules
 
-const Hoek = require('hoek');
+const Hoek = require('@tleef/hoek');
 const Ref = require('./ref');
 
 // Type modules are delay-loaded to prevent circular dependencies

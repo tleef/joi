@@ -4,6 +4,7 @@ Object schema description language and validator for JavaScript objects.
 
 ![npm (scoped)](https://img.shields.io/npm/v/@tleef/joi.svg)
 ![Travis (.org) branch](https://img.shields.io/travis/tleef/joi/release.svg)
+![Coveralls github branch](https://img.shields.io/coveralls/github/tleef/joi/release.svg)
 [![NSP Status](https://nodesecurity.io/orgs/hapijs/projects/0394bf83-b5bc-410b-878c-e8cf1b92033e/badge)](https://nodesecurity.io/orgs/hapijs/projects/0394bf83-b5bc-410b-878c-e8cf1b92033e)
 [![Known Vulnerabilities](https://snyk.io/test/github/hapijs/joi/badge.svg)](https://snyk.io/test/github/hapijs/joi)
 
