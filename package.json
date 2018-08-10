@@ -4,7 +4,7 @@
   "version": "13.5.2",
   "homepage": "https://github.com/hapijs/joi",
   "repository": "git://github.com/hapijs/joi",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "keywords": [
     "hapi",
     "schema",

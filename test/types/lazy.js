@@ -3,7 +3,7 @@
 // Load modules
 
 const Lab = require('lab');
-const Joi = require('../..');
+const Joi = require('../../src');
 const Lazy = require('../../src/types/lazy/index');
 const Helper = require('../helper');
 

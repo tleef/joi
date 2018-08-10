@@ -3,7 +3,7 @@
 // Load modules
 
 const { expect } = require('code');
-const Joi = require('../');
+const Joi = require('../src');
 
 
 // Declare internals
