@@ -4,7 +4,7 @@
 
 const Lab = require('lab');
 const Joi = require('../..');
-const Lazy = require('../../lib/types/lazy/index');
+const Lazy = require('../../src/types/lazy/index');
 const Helper = require('../helper');
 
 

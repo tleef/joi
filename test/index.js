@@ -3,7 +3,7 @@
 // Load modules
 
 const Lab = require('lab');
-const Joi = require('../lib');
+const Joi = require('../src');
 const Helper = require('./helper');
 
 
@@ -3779,7 +3779,7 @@ describe('Joi', () => {
                 name: 'myType'
             });
 
-            const Any = require('../lib/types/any');
+            const Any = require('../src/types/any');
             expect(customJoi).to.be.an.instanceof(Any);
         });
 

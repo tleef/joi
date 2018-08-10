@@ -3,7 +3,7 @@
 // Load modules
 
 const Lab = require('lab');
-const Set = require('../lib/set');
+const Set = require('../src/set');
 
 
 // Declare internals

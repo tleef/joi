@@ -3,7 +3,7 @@
 // Load modules
 
 const Lab = require('lab');
-const Joi = require('../lib');
+const Joi = require('../src');
 
 
 // Declare internals

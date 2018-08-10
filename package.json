@@ -4,31 +4,39 @@
   "version": "13.5.2",
   "homepage": "https://github.com/hapijs/joi",
   "repository": "git://github.com/hapijs/joi",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "keywords": [
     "hapi",
     "schema",
     "validation"
   ],
   "engines": {
-    "node": ">=8.9.0"
+    "node": ">=6.10"
   },
   "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.56",
     "hoek": "5.x.x",
     "isemail": "3.x.x",
     "topo": "3.x.x"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.56",
+    "@babel/core": "^7.0.0-beta.56",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.56",
+    "@babel/preset-env": "^7.0.0-beta.56",
     "code": "5.x.x",
     "hapitoc": "1.x.x",
     "lab": "15.x.x"
   },
   "scripts": {
+    "build": "babel src --out-dir lib",
     "test": "lab -t 100 -a code -L",
     "test-debug": "lab -a code",
     "test-cov-html": "lab -r html -o coverage.html -a code",
+    "test-cov-lcov": "lab -r console -o stdout -r lcov -o coverage/lcov.info -a code",
     "toc": "hapitoc",
-    "version": "npm run toc && git add API.md README.md"
+    "version": "npm run toc && git add API.md README.md",
+    "prepare": "yarn build"
   },
   "license": "BSD-3-Clause"
 }
